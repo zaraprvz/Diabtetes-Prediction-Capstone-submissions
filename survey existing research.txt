@@ -1,0 +1,65 @@
+﻿
+Smith, J., et al. are the authors of "Using Machine Learning Algorithms for Diabetes Prediction," which was published in the Journal of Medical Informatics in 2021. This study looked into the prediction of diabetes using a variety of machine learning approaches, including Random Forest, Decision Trees, Support Vector Machines (SVM), and Logistic Regression. The dataset that was used was the Pima Indians Diabetes Database. The analysis found that Random Forest provided the best accuracy.  Results from Random Forest had 78% accuracy, 80% precision, and 75% recall.  A Random Forest model will be constructed and developed using the scikit-learn package in Python. 	
+
+The second research Diabetes Prognosis Through a Deep Learning Method L. Brown and other authors are the authors. IEEE, 2022, Transactions on Neural Nets and Learning Systems. To put it briefly: This study forecasted diabetes using neural networks, a kind of deep learning model. The model's design included numerous hidden layers and ReLU activation mechanisms. Pima Indians Diabetes Database was the dataset used in the study, which involved a significant amount of hyperparameter tuning. Results: 82% accuracy, 84% precision, and 78% recall were achieved by the neural network model.Neural Network: We will construct and train a neural network using the Python TensorFlow and Keras frameworks.
+
+Advanced Python Code for Diabetes Prediction in a GitHub Repository. Author: Iamrahulhere. To put it briefly: This project provides Python code for diabetes prediction using a Kaggle dataset. It includes several machine learning models put into practice, phases for data preparation, and comprehensive evaluation metrics. The repository contains thorough documentation and results visualization. Results; Random Forest and XGBoost were shown to be effective models, with the best model achieving an accuracy of almost 80% (GitHub). 
+
+Data Preparation: Comply with the repository's guidelines for data pretreatment to handle missing values, standardize your data, and choose your features. Model Implementation: Apply and train the Random Forest and XGBoost models in accordance with the project's guidelines. Evaluation: Utilize metrics such as accuracy, precision, recall, and F1 to evaluate the model's performance.
+
+In contrast, the models I'll be using in my project include Xgboost, AdaBoost, Gradient Boosting, K-neighbor, Random Forest, Design Tree, and Logistic Regression. In addition, I'll clean up the data, deal with any missing values, normalize the features, and separate it into testing and training sets. I will evaluate the models using accuracy, precision, recall, and F1 score in order to compare the model outputs with the published findings.
+
+Performance metrics of classifiers in the merged dataset (RTML insulin obtained from Pima Indian median)
+
+
+<table>
+  <tr>
+   <td><strong>Classifier</strong>
+   </td>
+   <td><strong>Precision</strong>
+   </td>
+   <td><strong>Recall</strong>
+   </td>
+   <td><strong>F1 Score</strong>
+   </td>
+   <td><strong>Accuracy</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>AdaBoost
+   </td>
+   <td>0.78
+   </td>
+   <td>0.78
+   </td>
+   <td>0.78
+   </td>
+   <td>78%
+   </td>
+  </tr>
+  <tr>
+   <td>Random Forest
+   </td>
+   <td>0.76
+   </td>
+   <td>0.76
+   </td>
+   <td>0.76
+   </td>
+   <td>76%
+   </td>
+  </tr>
+  <tr>
+   <td>XGBoost
+   </td>
+   <td>0.77
+   </td>
+   <td>0.76
+   </td>
+   <td>0.76
+   </td>
+   <td>76%
+   </td>
+  </tr>
+</table>
+
