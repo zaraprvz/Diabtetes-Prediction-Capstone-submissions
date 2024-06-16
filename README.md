@@ -1,4 +1,4 @@
-# Diabtetes-Prediction-Capstone-submissions
+Step 3: Project Proposal 
 # **Diabetes Prediction dataset **
 
 Elevated blood sugar levels are the cause of diabetes, a disease that can harm the heart, blood vessels, kidneys, eyes, nerves, and heart. Early diagnoses and proper care are crucial for preventing issues and improving the quality of life for people with diabetes.
