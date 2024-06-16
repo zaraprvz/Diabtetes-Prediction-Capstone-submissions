@@ -1,0 +1,81 @@
+﻿This  describes the deployment architecture for a support vector classifier-based diabetes prediction model. The architecture handles data storage, model training, deployment, and monitoring.The main elements, data flow, model lifecycle, retraining techniques, and monitoring systems are all covered. 
+
+**Q**)**What are the major components of your system? What are the inputs and outputs?**
+
+**Inputs:** JSON-formatted patient data, including features such as number of pregnancies, glucose levels, blood pressure, and so on.
+
+**Output:** Diabetes prediction results indicate the likelihood of diabetes (binary output).
+
+The major components are:
+
+ **Data Storage**: Model artifacts and datasets can be stored on Amazon S3.
+
+**Model Training Environment:** To train models, use a local computer or a cloud-based platform such as Google Colab.
+
+**Model Deployment Environment**: AWS API Gateway is used to create the API endpoint, and AWS Lambda is used to host the model.
+
+**REST API** endpoint to accept input data and provide predictions.
+
+**Monitoring and Logging**: System activity can be tracked and recorded using AWS CloudWatch.
+
+**Frontend Optional:** An online interface for user communication.
+
+**Q)Where and how will the data be stored?**
+
+**Location: **AWS S3 provides secure and scalable storage.
+
+**Data Flow: **Data is uploaded to S3, processed during model training, and learned models are returned to S3. 
+
+**Q)How will data get from one component of the system to another?**
+
+**Data Upload: **The data is uploaded to AWS S3.
+
+**Model Training: **Training data is loaded from S3 into the training environment. Following training, the model is saved back to S3.
+
+**Model Deployment: **The trained model is uploaded from S3 to AWS Lambda.
+
+**API Requests: **The API Gateway forwards incoming requests to the Lambda function, which gives the predicted results.
+
+**Q)What is the lifecycle of the ML/DL model? How frequently does the model need retraining? Is it at fixed intervals or when certain conditions are met? **
+
+**Training Frequency: **The model is retrained either monthly or when notable fresh data becomes available**.**
+
+**Retraining Data: **AWS S3 is used to store new patient records.
+
+**Retraining Procedure: **Retrieve fresh data, assess performance, retrain the model, and save the modified model back to S3.
+
+**Model evaluation: **Assessing a validation set using metrics like recall, accuracy, and precision.
+
+**Q)What kind of data is needed for retraining? How will the data be stored and managed?How will the retrained model be evaluated?How will the retrained model be deployed?How will the retrained model be stored as an artifact? **
+
+Evaluation: The retrained model is tested against a validation set to check performance.
+
+Deployment:** **The new model replaces the previous paradigm in AWS Lambda.
+
+Artifact Storage**: **Models are versioned and saved in S3.
+
+**Q)How will the system be monitored and debugged? **
+
+AWS CloudWatch is a monitoring tool that allows for real-time logging and monitoring.
+
+Debugging: CloudWatch logs are useful for problem-solving and diagnosis.
+
+**Q)What are the specific tools/technologies that will be used to build this system?**
+
+Cloud Storage**: **Amazon S3
+
+Python, Scikit-Learn, Pandas, and Joblib for Model Training
+
+AWS Lambda and AWS API Gateway deployment
+
+AWS CloudWatch is being monitored.
+
+Frontend (Optional): JavaScript, HTML, CSS, and React.js
+
+**Q)What is the estimated implementation cost in terms of resources, time, and money as applicable? **
+
+**Resources: **Minimal for deployment, moderate computing resources for training.
+
+**Time: **A few hours a month are needed for continuous maintenance, and the initial setup takes one to two weeks.
+
+**Money: **The first round of research is covered by the AWS Free Tier, with low continuing expenses for S3 storage, Lambda calls, and API Gateway queries.
