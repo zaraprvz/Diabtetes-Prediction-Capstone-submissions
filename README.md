@@ -1,3 +1,24 @@
+Step 1: Initial Project Ideas 
+**House Price Prediction**
+
+House price prediction is used to determine the value of residential properties based on a variety of characteristics or variables associated with them. The numerical dataset for house price prediction includes the number of bedrooms and bathrooms, property size, number of storeys, year built, and distance from nearby facilities.The category elements include neighborhood or location, dwelling style, garage type, availability of facilities, and so on. I will be using data from kaggle House Prices: Advanced Regression Techniques .
+
+**Diabetes Prediction Dataset **
+
+Many individuals with diabetes remain undiagnosed until they develop severe complications.Solution: A predictive model can help identify high-risk individuals based on their health data, enabling early diagnosis and treatment. Early detection allows for lifestyle changes and medical interventions that can prevent or delay the onset of diabetes.The goal of developing a diabetes prediction model is to identify individuals at high risk of developing diabetes early on. By predicting the likelihood of diabetes, healthcare providers can take proactive measures to manage and treat the disease, ultimately improving patient health and quality of life.
+
+**Movie Recommendation System **
+
+Collaborative filtering is used in movie recommendation systems. Collaborative filtering is based on the concept that users who have previously liked comparable items are more likely to like them again in the future. The dataset contains information about users, movies, and user ratings. The MovieLens dataset is a popular alternative and is available in various sizes (e.g., MovieLens 100k, MovieLens 1M, and MovieLens 20M).
+
+
+
+
+
+
+
+
+
 Step 3: Project Proposal 
 # **Diabetes Prediction dataset **
 
