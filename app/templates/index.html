@@ -1,0 +1,36 @@
+Create the HTML template for the web interface.
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+</head>
+<body>
+    <h1>Diabetes Prediction</h1>
+    <form action="/predict" method="post">
+        <label>Pregnancies: <input type="number" step="any" name="pregnancies"></label><br>
+        <label>Glucose: <input type="number" step="any" name="glucose"></label><br>
+        <label>Blood Pressure: <input type="number" step="any" name="blood_pressure"></label><br>
+        <label>Skin Thickness: <input type="number" step="any" name="skin_thickness"></label><br>
+        <label>Insulin: <input type="number" step="any" name="insulin"></label><br>
+        <label>BMI: <input type="number" step="any" name="bmi"></label><br>
+        <label>Diabetes Pedigree Function: <input type="number" step="any" name="dpf"></label><br>
+        <label>Age: <input type="number" step="any" name="age"></label><br>
+        <button type="submit">Predict</button>
+    </form>
+    {% if prediction %}
+    <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
+app.py: Run the Flask application.
+
+python
+Copy code
+from app import create_app
+
+app = create_app()
+
+if __name__ == "__main__":
+    app.run(debug=True)
