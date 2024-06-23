@@ -1,7 +1,25 @@
-rom flask import Flask
+from flask import Flask
 
 def create_app():
     app = Flask(__name__)
     from .routes import main
     app.register_blueprint(main)
     return app
+Define the routes and logic for the web application.
+
+from flask import Blueprint, render_template, request
+import pandas as pd
+from src.model import load_model, predict
+
+main = Blueprint('main', __name__)
+
+@main.route('/')
+def index():
+    return render_template('index.html')
+
+@main.route('/predict', methods=['POST'])
+def predict_route():
+    # Get form data
+    features = [float(x) for x in request.form.values()]
+    prediction = predict(features)
+    return render_template('index.html', prediction=prediction)
