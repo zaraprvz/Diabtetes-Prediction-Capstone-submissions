@@ -1,29 +1,27 @@
-Phase 1 of Capstone: Building a working prototype
+# Diabetes Prediction Capstone Project
 
-All intermediate capstone project submissions.
+## Repository Structure
 
-Step 1: Initial Project Ideas (No rubric) 
+- `data/`: Contains data files.
+  - `raw/`: Original raw data files.
+  - `processed/`: Processed data files used for modeling.
+- `notebooks/`: Jupyter notebooks for each step of the project.
+- `src/`: Source code for the project.
+- `templates/`: HTML templates for the web app.
+- `docs/`: Documentation and text files.
+- `app/`: Flask application code.
+  - `templates/`: HTML templates for the web app.
 
-Step 2: Data Collection  (Rubric)
+## How to Run the Project
 
-Step 3: Project Proposal (Rubric)
+1. Clone the repository
+2. Navigate to the project directory
+3. Follow the instructions in the Jupyter notebooks in the `notebooks` folder.
+4. Run the Flask app using the instructions provided in the `app` folder.
 
-Step 4: Survey Existing Research (Rubric)
+## Capstone Project
 
-Step 5: Data Wrangling (Rubric)
-
-Step 7: Experiment with Various Models (Rubric) 
-
-Step 8: Scale Your Prototype (Rubric)
-
-Step 9: Pick Your Deployment Method  (Rubric)
-
-Step 10: Design Your Deployment Solution (Rubric)
-
-Step 11: Deployment Implementation (Rubric)
-
-Step 12: Share Your Project (Rubric) 
-
+Diabetes Prediction Using Machine Learning
 
 
 
